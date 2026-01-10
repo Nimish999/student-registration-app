@@ -102,20 +102,19 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 
 ## Table Structure Details
 
-### Users Table
+### students Table
 ```sql
-CREATE TABLE users (
+CREATE TABLE students (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
+    full_name VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL UNIQUE,
-    course VARCHAR(255),
-    student_class VARCHAR(100),
-    percentage DECIMAL(5,2),
-    branch VARCHAR(255),
-    mobile_number VARCHAR(20),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+    course VARCHAR(255) NOT NULL,
+    highest_education VARCHAR(255),
+    percentage INT,
+    branch VARCHAR(255) NOT NULL,
+    mobile VARCHAR(20)
 );
+
 ```
 
 ### Key Features:
