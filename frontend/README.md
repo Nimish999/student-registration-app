@@ -41,7 +41,7 @@ VITE_APP_TITLE=EasyCRUD Student Registration
 ```
 ## If the backend is private
 
-Update the 000-default.conf file and don not configure the .env file
+Update the 000-default.conf file and do not configure the .env file
 
 ```bash
 vim /etc/apache2/sites-available/000-default.conf
