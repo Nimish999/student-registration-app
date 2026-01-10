@@ -59,6 +59,12 @@ spring.jpa.show-sql=true
 ```shell
 mvn clean package
 ```
+or
+
+```shell
+mvn clean package -DskipTests
+```
+
 
 ## Step 4: Run the Application
 
@@ -77,4 +83,5 @@ http://localhost:8080
 
 
 To keep the application running in the background, you can use nohup or a similar method. 
+
 
