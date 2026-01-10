@@ -39,6 +39,17 @@ VITE_API_URL=http://$BACKEND:8080/api
 VITE_API_BASE_URL=http://$BACKEND:8080
 VITE_APP_TITLE=EasyCRUD Student Registration
 ```
+## If the backend is private
+
+Update the 000-default.conf file and don not configure the .env file
+
+```bash
+vim /etc/apache2/sites-available/000-default.conf
+```
+```shell
+ProxyPass /api http://10.0.2.200:8080/api
+ProxyPassReverse /api http://10.0.2.200:8080/api
+```
 
 To build the React application for production, run:
 
