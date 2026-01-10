@@ -46,6 +46,8 @@ Update the 000-default.conf file and do not configure the .env file
 ```bash
 vim /etc/apache2/sites-available/000-default.conf
 ```
+Add this at the end of the code
+
 ```shell
 ProxyPass /api http://10.0.2.200:8080/api
 ProxyPassReverse /api http://10.0.2.200:8080/api
