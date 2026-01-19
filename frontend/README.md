@@ -49,8 +49,8 @@ vim /etc/apache2/sites-available/000-default.conf
 Add this at the end of the code
 
 ```shell
-ProxyPass /api http://10.0.2.200:8080/api
-ProxyPassReverse /api http://10.0.2.200:8080/api
+ProxyPass /api http://(backend-ip):8080/api
+ProxyPassReverse /api http://(backend-ip):8080/api
 ```
 
 To build the React application for production, run:
